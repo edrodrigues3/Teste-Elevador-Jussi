@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>Elevador</title>
+	<link rel="stylesheet" type="text/css" href="elevador.css">
+</head>
+<body align="center">
+    <div id="principal1" align="center">
+        <ul id="indicador">
+            <li>TÉRREO</li>
+            <li class="atual">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+        <table id="tabela" cellspacing=0>
+         
+            <tr class="andar" id="andar5">
+                <td></td>
+                <td>5º ANDAR</td>
+                <td><a class="desce" href="javascript:void(0);"><img src="andar-inferior.png"></a></td>
+            </tr>
+            <tr class="andar" id="andar4">
+                <td></td>
+                <td>4º ANDAR</td>
+                <td><a class="sobe" href="javascript:void(0);"><img src="andar-superior.png"></a></td>
+                <td><a class="desce" href="javascript:void(0);"><img src="andar-inferior.png"></a></td>
+            </tr>
+            <tr class="andar" id="andar3">
+                <td></td>
+                <td>3º ANDAR</td>
+                <td><a class="sobe" href="javascript:void(0);"><img src="andar-superior.png"></a></td>
+                <td><a class="desce" href="javascript:void(0);"><img src="andar-inferior.png"></a></td>
+            </tr>
+            <tr class="andar" id="andar2">
+                <td></td>
+                <td>2º ANDAR</td>
+                <td><a class="sobe" href="javascript:void(0);"><img src="andar-superior.png"></a></td>
+                <td><a class="desce" href="javascript:void(0);"><img src="andar-inferior.png"></a></td>
+            </tr>
+            <tr class="andar" id="andar1">
+                <td><div id="principal2">
+        <div id="elevador">
+            <p>1º<span id="tituloAndar">ANDAR</span></p>
+    
+            <div class="porta" id="portaesquerda"></div>
+            <div class="porta" id="portadireita"></div>
+
+            <div class="painel" id="painelesquerdo">            </div>
+            <div class="painel" id="paineldireito"></div>
+        </div>
+    </div></td>
+                <td>1º ANDAR</td>
+                <td><a class="sobe" href="javascript:void(0);"><img src="andar-superior.png"></a></td>
+                <td><a class="desce" href="javascript:void(0);"><img src="andar-inferior.png"></a></td>
+            </tr>
+            <tr class="andar" id="andar0">
+                <td></td>
+                <td>TÉRREO</td>
+                <td><a class="sobe" href="javascript:void(0);"><img src="andar-superior.png"></a></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    
+    
+    
+    
+<script src="jquery-3.0.0-beta1.min.js"></script>
+    <script src="elevador.js"></script>
+</body>
+</html>
